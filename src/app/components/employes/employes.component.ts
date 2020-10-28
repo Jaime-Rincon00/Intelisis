@@ -20,15 +20,15 @@ export class EmployesComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
   ) {
 
-    // this.activatedRoute.params.subscribe(params => {
+    this.activatedRoute.params.subscribe(params => {
 
-    //   this.loader = true;
-    //   this.searchService.getEmployees().subscribe(data => {
-    //     // console.log('constructor', data);
-    //     this.loader = false;
-    //     this.data = data;
-    //   });
-    // });
+      this.loader = true;
+      this.searchService.getEmployees().subscribe(data => {
+        console.log('constructor', data);
+        this.loader = false;
+        this.data = data;
+      });
+    });
   }
 
   ngOnInit() {

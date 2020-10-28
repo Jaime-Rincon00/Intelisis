@@ -41,6 +41,10 @@ form {
     color: #fff;
 }
 
+.guardar:hover {
+    opacity: 0.8;
+}
+
 .guardar, .cancelar {
     border: none;
     border-radius: 4px;

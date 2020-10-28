@@ -3,8 +3,8 @@
     </div>
     <a [routerLink]="['/employes']" class="inicio">Inicio</a>
     <div class="input-container">
-        <input class="input-field" [(ngModel)]="matricula" (keyup.enter)="buscar()" type="text" placeholder="Buscar"
-            name="search">
+        <input class="input-field" [(ngModel)]="matricula" (keyup.enter)="buscar()" type="number"
+            placeholder="Busca usuario por Id" name="search">
         <a class="icon" (click)="buscar()"><i class="fa fa-search"></i></a>
     </div>
 </div>

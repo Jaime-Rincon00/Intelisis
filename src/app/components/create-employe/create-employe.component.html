@@ -132,9 +132,12 @@
                         <div class="info-value"><input class="input-field" [(ngModel)]="data.matricula" type="number"
                                 formControlName="matricula" id="matricula"></div>
                     </div>
-
-                    <button class="guardar" [disabled]="!employeForm.valid">
-                        <i class="fa fa-save"></i> Guardar</button>
+                    <div class="actions">
+                        <a class="cancelar" (click)="cancelar()">
+                            <i class="fa fa-ban"></i> Cancelar</a>
+                        <button class="guardar" [disabled]="!employeForm.valid">
+                            <i class="fa fa-save"></i> Guardar</button>
+                    </div>
                 </div>
             </form>
         </div>

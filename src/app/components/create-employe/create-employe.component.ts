@@ -5,6 +5,7 @@ import { SearchService } from '../../service/search.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import * as _ from 'lodash';
 import { element } from 'protractor';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-create-employe',
@@ -139,15 +140,31 @@ export class CreateEmployeComponent implements OnInit {
     }
   }
 
+  cancelar() {
+    this.router.navigateByUrl('/employe');
+  }
+
   saveForm() {
 
     if (this.employeForm.valid) {
       // console.log(this.data);
       this.searchService.postEmployee(this.data).subscribe(resp => {
-        // console.log(resp);
+
+        if (!resp['error']) {
+
+          this.employeForm.reset();
+          this.router.navigate(['/employes']);
+          console.log(resp);
+
+        } else {
+          Swal.fire(
+            resp['error'],
+            '',
+            'error'
+          );
+        }
+
       });
-      this.router.navigate(['/employes']);
-      this.employeForm.reset();
 
     }
   }
