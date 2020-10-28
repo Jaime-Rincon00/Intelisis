@@ -1,0 +1,97 @@
+.flex-container {
+    background: linear-gradient(130deg, #d8d8d8, #89b1ea);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.msj {
+    color: rgb(221, 3, 3);
+}
+
+.form-card {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 5%;
+    width: 90%;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.icon {
+    background: #ff7786;
+    color: white;
+    min-width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-field {
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-field:focus {
+    border: 2px solid #ff7786;
+}
+
+.ingresar {
+    background-color: #4e8eec;
+    border: none;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.ingresar:hover {
+    opacity: 0.8;
+}
+
+.person {
+    align-items: center;
+    background-color: #103e82;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 100px;
+}
+
+.person>.fa-user {
+    font-size: 5rem;
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+    .form-card {
+        width: 70%;
+    }
+    .person {
+        height: 150px;
+        width: 150px;
+    }
+    .person>.fa-user {
+        font-size: 10rem;
+    }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1024px) {
+    .form-card {
+        width: 35%;
+    }
+}

@@ -1,0 +1,259 @@
+/* general */
+
+.w-100, img {
+    width: 100%;
+}
+
+.column-flex {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.row-flex {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.br {
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.alert {
+    background-color: #ea6464;
+    margin-top: 2%;
+}
+
+.err {
+    color: #730101;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.guardar {
+    background-color: #e77875;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: 5%;
+    outline: none;
+    padding: 8px;
+    width: 50%;
+}
+
+/* Mobile */
+
+.container {
+    align-items: center;
+}
+
+.fondo {
+    filter: brightness(0.2);
+    height: 40vh;
+}
+
+.card-container {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -195px);
+    width: 85%;
+}
+
+.card-row {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+}
+
+.tooltips-message {
+    background-color: #e77875;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+}
+
+.message-pico {
+    border-bottom: 14px solid transparent;
+    border-left: 18px solid #e77875;
+    transform: translate(10px, 0px);
+}
+
+.card-header {
+    justify-content: space-between;
+}
+
+.name, .info-body {
+    margin-top: 5%;
+}
+
+.info-row {
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.info-key {
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+.info-value {
+    width: 70%;
+}
+
+.admission {
+    background-color: #e77875;
+    border-radius: 4px;
+    color: #fff;
+    padding: 4px;
+    width: 80%;
+}
+
+.section {
+    background-color: #e77875;
+    height: 10vh;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.box-gray {
+    background-color: #e0e0e0;
+    height: 15vh;
+    width: 91%;
+    transform: translate(0, -256px);
+    z-index: -1;
+}
+
+.upload-image {
+    background-color: #e77875;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    padding: 8px;
+    width: 50%;
+    text-align: center;
+    cursor: context-menu;
+}
+
+.upload-image:hover {
+    opacity: 0.8;
+}
+
+#image {
+    visibility: hidden;
+}
+
+.input-field {
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-field:focus {
+    border: 2px solid #ff7786;
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+    .fondo {
+        height: 30vh;
+    }
+    .card-container {
+        transform: translate(0px, -130px);
+        width: 80%;
+    }
+    .card-row {
+        flex-flow: row nowrap;
+        padding: 20px;
+    }
+    .col-photo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    .card-body {
+        padding-left: 20px;
+        width: 60%;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .info-row {
+        margin-top: 5%;
+    }
+    .name, .info-body {
+        margin-top: 2%;
+    }
+    .box-gray {
+        height: 17vh;
+        width: 83%;
+        transform: translate(0, -190px);
+    }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1024px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2em;
+    }
+    .name {
+        margin-top: 2%;
+    }
+    .info-body {
+        margin-top: 4%;
+    }
+    .fondo {
+        height: 50vh;
+    }
+    .card-container {
+        transform: translate(0, -245px);
+        width: 70%;
+    }
+    .box-gray {
+        height: 17vh;
+        width: 72%;
+        transform: translate(0, -310px);
+    }
+}
+
+/* desktop big*/
+
+@media only screen and (min-width: 1440px) {
+    .fondo {
+        height: 40vh;
+    }
+    .card-container {
+        transform: translate(0px, -210px);
+        width: 70%;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.5em;
+    }
+    .box-gray {
+        width: 73%;
+        transform: translate(0, -275px);
+    }
+}

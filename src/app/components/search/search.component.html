@@ -1,0 +1,10 @@
+<div class="nav-bar">
+    <div class="logo"><i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+    <a [routerLink]="['/employes']" class="inicio">Inicio</a>
+    <div class="input-container">
+        <input class="input-field" [(ngModel)]="matricula" (keyup.enter)="buscar()" type="text" placeholder="Buscar"
+            name="search">
+        <a class="icon" (click)="buscar()"><i class="fa fa-search"></i></a>
+    </div>
+</div>

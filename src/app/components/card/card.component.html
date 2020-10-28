@@ -1,0 +1,57 @@
+<div class="container column-flex">
+    <!-- imagen de fondo -->
+    <img class="fondo" src="/assets/img/fondo.jpg" alt="">
+    <div class="card-container br">
+
+
+        <div class="card-row">
+
+            <!-- foto del empleado -->
+            <div class="col-photo">
+                <img [src]="imageUrl" alt="">
+            </div>
+            <!-- este div contiene la info del empleado  -->
+            <div class="card-body w-100 column-flex">
+                <div class="card-header w-100 row-flex">
+                    <div class="message-container">
+                        <div class="tooltips-message w-100">HELLO</div>
+                        <div class="message-pico"></div>
+                    </div>
+                    <div class="id-employed"> ID: {{data.matricula}} </div>
+                </div>
+                <div class="name w-100">
+                    <span class="title">I´m <strong>{{data.nombre}}</strong></span><br>
+                    <span class="subtitle">{{data.puesto}}</span>
+                </div>
+                <div class="info-row">
+                    <div class="info-body row-flex">
+                        <div class="info-key"><strong>AGE:</strong></div>
+                        <div class="info-value">{{data.edad}}</div>
+                    </div>
+                    <div class="info-body row-flex">
+                        <div class="info-key"><strong>ADDRESS:</strong></div>
+                        <div class="info-value">{{data.direccion}}</div>
+                    </div>
+                    <div class="info-body row-flex">
+                        <div class="info-key"><strong>EMAIL:</strong></div>
+                        <div class="info-value">{{data.correo}}</div>
+                    </div>
+                    <div class="info-body row-flex">
+                        <div class="info-key"><strong>PHONE:</strong></div>
+                        <div class="info-value">{{data.telefono}}</div>
+                    </div>
+                    <div class="info-body row-flex">
+                        <div class="info-key">
+                            <div class="admission"><strong>ADMISSION:</strong></div>
+                        </div>
+                        <div class="info-value"><i class="fa fa-calendar"></i> {{data.fecha_ingreso | date:'y-MM-d'}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section"></div>
+    </div>
+    <div class="box-gray br"></div>
+
+</div>

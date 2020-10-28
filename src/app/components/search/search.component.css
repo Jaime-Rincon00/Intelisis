@@ -1,0 +1,58 @@
+.nav-bar {
+    align-items: center;
+    background-color: #ff7786;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.logo {
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+.logo>.fa-user {
+    font-size: 2rem;
+    color: #4b4b4b;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    /* margin-bottom: 15px; */
+    width: 30%;
+}
+
+.icon {
+    background: #4cab4a;
+    color: white;
+    min-width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+.input-field {
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-field:focus {
+    border: 2px solid #4CAF50;
+}
+
+.inicio {
+    color: #fff;
+    font-size: 1.5rem;
+    outline: none;
+    text-decoration: none;
+}

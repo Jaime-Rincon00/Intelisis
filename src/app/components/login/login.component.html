@@ -1,0 +1,24 @@
+<div class="flex-container">
+
+    <div class="form-card">
+        <div class="person">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <form>
+            <span class="msj" *ngIf="msj">*Favor de llenar los campos</span>
+            <span class="msj" *ngIf="message">*usuario o contraseña incorrectos!</span>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" [(ngModel)]="name" type="text" placeholder="Username" name="user">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" [(ngModel)]="password" type="password" placeholder="Password" name="pass">
+            </div>
+            <button class="ingresar" (click)="ingresar()">
+                <i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar
+            </button>
+        </form>
+    </div>
+</div>

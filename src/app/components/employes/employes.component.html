@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="title" *ngIf="!loader">
+        <h1>Tabla de Empleados</h1>
+        <button class="agregar" (click)="newEmploye()"><i class="fa fa-plus"></i> Nuevo Empleado</button>
+    </div>
+    <table *ngIf="!loader">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Puesto</th>
+                <th>Edad</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{item.matricula}}</td>
+                <td>{{item.nombre}}</td>
+                <td>{{item.puesto}}</td>
+                <td>{{item.edad}}</td>
+                <td>{{item.correo}}</td>
+                <td>{{item.telefono}}</td>
+                <td class="actions">
+                    <button class="edit" (click)="updateEmploye(item.matricula)"><i
+                            class="fa fa-pencil-square-o"></i></button>
+                    <button class="delete" (click)="deleteEmploye(item.matricula)"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="loader" *ngIf="loader">Loading...</div>
+</div>
